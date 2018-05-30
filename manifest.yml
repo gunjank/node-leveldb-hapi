@@ -1,0 +1,11 @@
+---
+applications:
+- name: node-leveldb-hapi
+  memory: 50m  
+  path: .
+  buildpack: https://github.com/cloudfoundry/nodejs-buildpack
+  host: node-leveldb-hapi
+  command: node server.js
+  instances: 1
+  disk_quota: 256m
+  random-route: false  
